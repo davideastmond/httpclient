@@ -7,8 +7,12 @@ var params = {
 
 // Call back function
 
-function callback() {
+function callback(response) {
   console.log("In response handler callback!");
+  response.on('data', function(chunk) {
+    console.log("[-- CHUNK of LENGTH " + chunk.length + " --]");
+    console.log(chunk.toString());
+  });
 }
 
 console.log("About to make request...");
