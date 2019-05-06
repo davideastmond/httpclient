@@ -1,8 +1,8 @@
 var https = require("https");
 
 var params = {
-  host: "www.example.com",
-  path: "/"
+  host: "stream-large-file.herokuapp.com",
+  path: "/give-me-stuff-now"
 };
 
 // Call back function
